@@ -35,6 +35,54 @@ Below your will find a main `Course Guidelines` and `Course Content` listing.
 |:--| :--  | :--  |
 |01| [HTML Git CSS](#html-git-css)| HTML Tags, Box Model, Floats, Classes, IDs, Positioning, Dev Tools | 
 |02| [CSS - Bootstrap](#css-bootstrap)| Bootstrap CDN, The Grid System, Bootstrap Components| 
+|03| [Javascript](#javascript)| Strings, Booleans, Numbers, Objects, Arrays; conditionals, For loops, while loops, until loops; this |
+
+<hr>
+<hr>
+<hr>
+
+
+
+## Javascript
+[Back to Course Content](#course-content)
+
+-----
+### :book: **[Javascript Student Resources](course-content/03-javascript/student-resources/README.md)**
+
+-----
+### :dart: **[Javascript Code Drills](course-content/03-javascript/code-drills/README.md#dart-code-drills)**
+
+-----
+### :pencil: **[Javascript Homework](course-content/03-javascript/homework/README.md#unit-03-javascript-homework-password-generator)**
+
+- JavaScript Homework: Password Generator
+[Homework Instructions Link](course-content/03-javascript/homework/README.md#unit-03-javascript-homework-password-generator)
+    * Create an application that generates a random password based on user-selected criteria. This app will run in the browser and feature dynamically updated HTML and CSS powered by your JavaScript code.
+
+
+-----
+### :computer: Javascript Activities
+
+| Activity |
+|:--	|
+|[01-CodeDissection](course-content/03-javascript/activities/01-CodeDissection)|
+|[02-BasicVariablesDemo](course-content/03-javascript/activities/02-BasicVariablesDemo)|
+|[03-PizzaVariables](course-content/03-javascript/activities/03-PizzaVariables)|
+|[04-ConsoleLogDemo](course-content/03-javascript/activities/04-ConsoleLogDemo)|
+|[05-PizzaConsole](course-content/03-javascript/activities/05-PizzaConsole)|
+|[06-PromptDemo](course-content/03-javascript/activities/06-PromptDemo)|
+|[07-PromptSushi](course-content/03-javascript/activities/07-PromptSushi)|
+|[08-ConditionalDemo](course-content/03-javascript/activities/08-ConditionalDemo)|
+|[09-ConditionalActivity](course-content/03-javascript/activities/09-ConditionalActivity)|
+|[10-ConditionalActivity2](course-content/03-javascript/activities/10-ConditionalActivity2)|
+|[11-ArraysDemo](course-content/03-javascript/activities/11-ArraysDemo)|
+|[12-ArraysActivity](course-content/03-javascript/activities/12-ArraysActivity)|
+|[13-Bands](course-content/03-javascript/activities/13-Bands)|
+|[14-JSDissect](course-content/03-javascript/activities/14-JSDissect)
+|[15-CoolPeopleArray](course-content/03-javascript/activities/15-CoolPeopleArray)|
+|[16-ArraySetting](course-content/03-javascript/activities/16-ArraySetting)|
+|[17-MyFirstLoop](course-content/03-javascript/activities/17-MyFirstLoop)|
+|[18-ZooLoop](course-content/03-javascript/activities/18-ZooLoop)|
 
 
 <hr>
