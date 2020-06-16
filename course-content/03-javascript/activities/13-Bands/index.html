@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Array Activity - Unsolved</title>
+  </head>
+  <body>
+
+    <script type="text/javascript">
+
+      var favouriteBands = ["the doors", "steely dan", "the eagles", "test"];
+
+      var whatBandDoYouLike = prompt("What's your favourite band?");
+      var whatBandDoYouLikeLower = whatBandDoYouLike.toLowerCase();
+
+      if (favouriteBands.includes(whatBandDoYouLikeLower)) {
+          alert("YEAH I LOVE THEM!")
+      }
+      else {
+          alert("Nah. They're pretty lame.")
+      }
+
+      console.log(favouriteBands);
+      console.log(whatBandDoYouLikeLower);
+      console.log(favouriteBands.includes("test"));
+
+    </script>
+
+  </body>
+</html>
