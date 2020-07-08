@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Random Numbers</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+
+        var ties = 0;
+        var wins = 0;
+        var losses = 0;
+        var optionsArray = ["r", "p", "s"];
+        var anotherGame = true;
+        var validInput = false;
+
+        // function sourced from https://stackoverflow.com/questions/1527803/generating-random-whole-numbers-in-javascript-in-a-specific-range
+        function getRandomInt(min, max) {
+            min = Math.ceil(min);
+            max = Math.floor(max);
+            return Math.floor(Math.random() * (max - min + 1)) + min;
+        }
+
+        function whoWins(user, machine) {
+            if (user === machine) {
+                alert("It was a tie");
+                ties += 1;
+                alert("There are now " + ties + " ties, " + wins + " wins, and " + losses + " losses");
+            }
+            else if ((user === "p" && machine === "r") || (user === "r" && machine === "s") || (user === "s" && machine === "p")) {
+                alert("Yay! You won!");
+                wins += 1;
+                alert("There are now " + ties + " ties, " + wins + " wins, and " + losses + " losses");
+            }
+            else {
+                alert("Oh no! You lost :(");
+                losses += 1;
+                alert("There are now " + ties + " ties, " + wins + " wins, and " + losses + " losses");
+            }
+        }
+
+        function isValid(user) {
+            if (user != "r" && user != "p" && user != "s") {
+                alert("Invalid input, please type r, p, or s");
+            }
+            else {
+                return true;
+            }
+        }
+
+        while (anotherGame) {
+            while (!validInput) {
+                var user = prompt("Pick rock, paper, or scissors by typing r, p, or s");
+                validInput = isValid(user);
+            }
+            alert("You picked " + user);
+            var machine = optionsArray[getRandomInt(0, 2)];
+            alert("The machine picked " + machine);
+            whoWins(user, machine);
+            validInput = false;
+            anotherGame = confirm("Do you want to play another game?")
+        }
+
+    </script>
+</body>
+
+</html>

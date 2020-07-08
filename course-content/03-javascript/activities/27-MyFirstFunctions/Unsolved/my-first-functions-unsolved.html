@@ -13,16 +13,30 @@
       // FUNCTIONS
       // ================================================================================
 
-      // Create a Function called "adder" that take three arguments (x, y, z).
-      // The function should add the arguments together, and log the result to the console.
+      function adder(x, y, z) {
+        console.log(x + y + z);
+      }
 
 
       // Create a Function called "multiplier" that takes three arguments (x, y, z).
       // The function should multiply the arguments, and log the result to the console.
 
+      function multiplier(x, y, z) {
+        console.log(x * y * z);
+      }
+
 
       // Create a Function called "isString" that takes three arguments (x, y, z).
       // "isString" determines if all three arguments are strings and logs an appropriate response to the console.
+
+      function isString(x, y, z) {
+        if (typeof x === "string" && typeof y === "string" && typeof z === "string") {
+          console.log("These three arguments are strings!");
+        }
+        else {
+          console.log("Not all three arguemnts are strings");
+        }
+      }
 
 
       // Create a Function called "vowelChecker" that takes in a single argument (x).
@@ -45,19 +59,20 @@
       // Call the adder function here.
 
 
-      console.log("-------------------");
+      adder(1, 2, 3);
 
 
       // Call the multiplier function here.
 
 
-      console.log("-------------------");
+      multiplier(3, 5, 7);
 
 
       // Call the isString function here.
 
 
-      console.log("-------------------");
+      isString("hello", "this is", "a string");
+      isString(5, 7, 9);
 
 
       // Call the vowelChecker function here.

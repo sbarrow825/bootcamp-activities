@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery Calculator</title>
+
+    <!-- Added link to the jQuery Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Added a link to Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+
+</head>
+<body>
+
+<script>
+var duplicateTrue1 = [1, 5, 6, 7, 8, 4, 4, 2];
+var duplicateFalse1 = [];
+var duplicateFalse2 = [1, 2, 3 , 4, 5, 6];
+var duplicateFalse3 = [5];
+var duplicateTrue2 = [2, 2];
+var duplicateTrue3 = [19, 223, 444, 223, 10, 10];
+var currentElement;
+var comparingElement;
+
+function containsDuplicate(inputArray) {
+    if (inputArray.length === 0 || inputArray.length === 1) {
+        return false;
+    }
+    for (i = 0; i < inputArray.length; i += 1) {
+        currentElement = inputArray[i];
+        for (j = i + 1; j < inputArray.length; j += 1) {
+            comparingElement = inputArray[j];
+            if (currentElement === comparingElement) {
+                return true;
+            }
+        }
+    }
+    return false;
+}
+
+console.log(containsDuplicate(duplicateTrue1));
+console.log(containsDuplicate(duplicateTrue2));
+console.log(containsDuplicate(duplicateTrue3));
+console.log(containsDuplicate(duplicateFalse1));
+console.log(containsDuplicate(duplicateFalse2));
+console.log(containsDuplicate(duplicateFalse3));
+</script>
+
+</body>
+</html>
