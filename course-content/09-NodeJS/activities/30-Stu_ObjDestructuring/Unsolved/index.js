@@ -10,9 +10,10 @@ const arya = {
 
 
 
-console.log(first); // <= Arya
-console.log(last); // <= Stark
+const {first, last} = arya;
 
+console.log(first);
+console.log(last);
 
 // 2. Nested Object
 const john = {
@@ -32,7 +33,7 @@ const john = {
 };
 
 // CODE BELOW HERE
-
+const {brother1, brother2} = john.family.brothers;
 
 console.log(brother1); // <= Rob Stark
 console.log(brother2); // <= Rickon Stark
